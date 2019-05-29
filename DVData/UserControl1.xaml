@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="DVData.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" >
+    <Grid>
+        <Border Background="LightBlue" BorderBrush="DarkBlue" BorderThickness="4" CornerRadius="4" Opacity="1" Width="Auto" Height="Auto">
+            <StackPanel Height="Auto" Orientation="Horizontal" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="   "/>
+                        <TextBlock x:Name="Popisek" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Text="GoID&#xD;&#xA;Hlavní vývojář: Jan Rajnoha&#xD;&#xA;Spolupracoval: Jan Skála&#xD;&#xA;2015 ©"/>
+                        <TextBlock Text="   "/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

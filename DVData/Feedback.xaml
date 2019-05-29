@@ -1,0 +1,22 @@
+﻿<Window x:Class="DVData.Feedback"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hodnocení programu" Height="436" Width="447" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Jméno" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" ToolTip="Zadejte jméno"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="22" Margin="169,57,0,0" TextWrapping="Wrap" Text="Zadejte jméno" VerticalAlignment="Top" Width="246" RenderTransformOrigin="0.592,0.519" ToolTip="Zadejte jméno" Foreground="#FF999999" LostFocus="Placeholder" GotFocus="Replace"/>
+        <Label Content="Hodnocení programu" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="38" Width="216" FontSize="20" FontWeight="Bold" ToolTip="Hodnocení programu"/>
+        <Label Content="E-mail (povinný údaj)" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" ToolTip="E_mail (povinný údaj)" Width="130"/>
+        <TextBox x:Name="mail" HorizontalAlignment="Left" Height="22" Margin="169,88,0,0" TextWrapping="Wrap" Text="@" VerticalAlignment="Top" Width="246" RenderTransformOrigin="0.592,0.519" ToolTip="E_mail (povinný údaj)" TextChanged="CheckMail"/>
+        <ComboBox x:Name="rating" HorizontalAlignment="Left" Margin="169,119,0,0" VerticalAlignment="Top" Width="246" ToolTip="Spokojenost (povinný údaj)" SelectionChanged="Convert">
+            <ComboBoxItem Content="Spokojen" ToolTip="Spokojen"/>
+            <ComboBoxItem Content="Nespokojen" ToolTip="Nespokojen"/>
+        </ComboBox>
+        <Label Content="Spokojenost (povinný údaj)" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" ToolTip="Spokojenost (povinný údaj)" Width="156"/>
+        <TextBox x:Name="words" HorizontalAlignment="Left" Height="160" Margin="10,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" ToolTip="Slovní hodnocení programu" GotFocus="Replace" LostFocus="Placeholder" Text="Slovní hodnocení programu" Foreground="#FF999999"/>
+        <Label Content="Slovní hodnocení programu (připomínky, chyby, pochvaly)" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" ToolTip="E_mail (povinný údaj)" Width="358"/>
+        <Button Content="Zrušit" HorizontalAlignment="Left" Margin="139,349,0,0" VerticalAlignment="Top" Width="121" Height="32" IsCancel="True"/>
+        <Button x:Name="Accept" Content="Odeslat" HorizontalAlignment="Left" Margin="10,349,0,0" VerticalAlignment="Top" Width="124" Height="32" IsDefault="True" Click="Send_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DVData.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FCS_SQLite" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;data source="I:\DATA_Programovani\Visual Studio 2012\Projects\DVData\DVData\bin\Debug\Films.mdf";useutf16encoding=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SQLite&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">data source="I:\DATA_Programovani\Visual Studio 2012\Projects\DVData\DVData\bin\Debug\Films.mdf";useutf16encoding=True</Value>
+    </Setting>
+    <Setting Name="FCS_SQLite_TA" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;useutf16encoding=True;data source="I:\DATA_Programovani\Visual Studio 2012\Projects\DVData\DVData\bin\Debug\Films.mdf"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SQLite&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">useutf16encoding=True;data source="I:\DATA_Programovani\Visual Studio 2012\Projects\DVData\DVData\bin\Debug\Films.mdf"</Value>
+    </Setting>
+    <Setting Name="FCS_SQLite_dbf" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;useutf16encoding=True;data source="I:\DATA_Programovani\Visual Studio 2012\Projects\DVData\DVData\bin\Debug\Films.db"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SQLite&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">useutf16encoding=True;data source="I:\DATA_Programovani\Visual Studio 2012\Projects\DVData\DVData\bin\Debug\Films.db"</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

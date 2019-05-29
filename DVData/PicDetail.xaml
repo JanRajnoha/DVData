@@ -1,0 +1,15 @@
+﻿<Window x:Class="DVData.PicDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DVData"
+        mc:Ignorable="d"
+        Title="PicDetail" Height="500" Width="500" MinWidth="300" MinHeight="300" Icon="Data/DVData.ico">
+    <Grid>
+        <Image x:Name="Img" Margin="10,79,10,10"/>
+        <Label x:Name="Nadpis" Content="Detail obrázku pro film: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="38" Width="Auto" FontSize="20" FontWeight="Bold" ToolTip="Detail obrázku"/>
+        <Label x:Name="Actors" Content="Na fotce: " HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" ToolTip="Seznam postav, které jsou na obrázku"/>
+
+    </Grid>
+</Window>

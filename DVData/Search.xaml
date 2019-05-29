@@ -1,0 +1,14 @@
+﻿<Window x:Class="DVData.Search"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vyhledat na CSFD" Height="191" Width="616" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="True" Icon="Data/DVData.ico">
+    <Grid>
+        <Label Content="Vyhledávání na ČSFD" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="38" Width="272" FontSize="20" FontWeight="Bold" ToolTip="Vyhledávání na ČSFD"/>
+        <TextBox x:Name="Find_box" HorizontalAlignment="Left" Height="23" Margin="263,57,0,0" TextWrapping="Wrap" Text="Zadejte výraz, který chcete hledat na ČSFD.cz" VerticalAlignment="Top" Width="325" ToolTip="Zadejte výraz, který chcete hledat na ČSFD.cz" Foreground="#FF999999" LostFocus="Placeholder" GotFocus="Replace"/>
+        <Label Content="Zadejte výraz, který chcete hledat na ČSFD.cz" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" ToolTip="Zadejte výraz, který chcete hledat na ČSFD.cz"/>
+        <Button x:Name="Accept" Content="Vyhledat" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="140" Height="37" IsDefault="True" ToolTip="Vyhledat" Click="Button_Click"/>
+        <Button Content="Zrušit" HorizontalAlignment="Left" Margin="155,102,0,0" VerticalAlignment="Top" Width="113" Height="37" IsCancel="True" ToolTip="Zrušit"/>
+        <CheckBox x:Name="MoreSearches" Content="Provést více vyhledávání" ToolTip="Provede více vyhledávání a karty poté zobrazí" HorizontalAlignment="Left" Margin="273,112,0,0" VerticalAlignment="Top" Height="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="151"/>
+
+    </Grid>
+</Window>

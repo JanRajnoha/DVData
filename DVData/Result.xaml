@@ -1,0 +1,54 @@
+﻿<Window x:Class="DVData.Result"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Výsledky hledání" Height="633" Width="484.131" MaxHeight="650" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" MinWidth="484" MinHeight="403" SizeChanged="Kontrola" Loaded="Pok" ResizeMode="NoResize">
+    <Grid>
+        <Grid x:Name="Panel" Height="600" Width="Auto">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Height="Auto">
+                <Label Content="Výsledky hledání" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Height="38" Width="171" FontSize="20" FontWeight="Bold" ToolTip="Výsledky hledání"/>
+                <Grid Height="Auto" Margin="10,57,10,10" ScrollViewer.HorizontalScrollBarVisibility="Auto" Width="Auto">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Clanek1" Height="*"/>
+                        <RowDefinition x:Name="Clanek2" Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Expander x:Name="Exp1" Header="Seznam nalezených filmů" Margin="10" Height="Auto" ToolTip="Seznam nalezených filmů" Width="Auto" Collapsed="OpenClose" Expanded="OpenClose" IsExpanded="True">
+                        <Grid Background="#FFE5E5E5" Width="Auto">
+                            <DataGrid x:Name="Films" Margin="10" ToolTip="Seznam nalezených filmů" MouseDoubleClick="Najdi" Width="Auto" IsReadOnly="True" LostFocus="SwitchDB" MaxHeight="500">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn x:Name="IDfilm" ClipboardContentBinding="{x:Null}" Header="ID" Visibility="Collapsed"/>
+                                    <DataGridTextColumn x:Name="Nazev" ClipboardContentBinding="{x:Null}" Header="Název filmu"/>
+                                    <DataGridTextColumn x:Name="Rok" ClipboardContentBinding="{x:Null}" Header="Rok výroby"/>
+                                </DataGrid.Columns>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridRow">
+                                        <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                                    </Style>
+                                </DataGrid.Resources>
+                            </DataGrid>
+                        </Grid>
+                    </Expander>
+                    <Expander x:Name="Exp2" Header="Seznam nalezených tvůrců" Margin="10" Width="Auto" Height="Auto" Grid.Row="1" ToolTip="Seznam nalezených tvůrců" Expanded="OpenClose" Collapsed="OpenClose" IsExpanded="True">
+                        <Grid Background="#FFE5E5E5" Width="Auto">
+                            <DataGrid x:Name="Actors" Margin="10" Width="Auto" MouseDoubleClick="Najdi" ToolTip="Seznam nalezených tvůrců" IsReadOnly="True" LostFocus="SwitchDB" MaxHeight="500">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn x:Name="IDact" ClipboardContentBinding="{x:Null}" Header="Rok výroby" Visibility="Collapsed"/>
+                                    <DataGridTextColumn x:Name="Jmeno" ClipboardContentBinding="{x:Null}" Header="Jméno tvůrce"/>
+                                    <DataGridTextColumn x:Name="Prace" ClipboardContentBinding="{x:Null}" Header="Povolání"/>
+                                    <DataGridTextColumn x:Name="Narozen" ClipboardContentBinding="{x:Null}" Header="Rok narození"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </Expander>
+                </Grid>
+            </Grid>
+        </Grid>
+        <StackPanel HorizontalAlignment="Center" Height="41" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="Auto" Orientation="Horizontal" >
+            <Button x:Name="Accept" Content="Vybrat" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Bottom" Width="136" Height="40" ToolTip="Vybrat a zobarzit kartu" IsDefault="True" Click="Accept_Click"/>
+            <Button Content="Zrušit" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="136" Height="40" ToolTip="Zrušit vyhledávání" IsCancel="True" Margin="15,0,0,0" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
