@@ -1,5 +1,7 @@
 # DVData
 
-Program for creating database of movies - WPF
+Program for creating database of movies
 
-Year: 2014
+**Technology:** WPF
+
+**Year:** 2014
